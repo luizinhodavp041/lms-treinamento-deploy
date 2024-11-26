@@ -18,9 +18,9 @@ app.use(
   cors({
     origin: [
       process.env.CLIENT_URL,
-      "http://localhost:5173", // para desenvolvimento
+      // "http://localhost:5173", // para desenvolvimento
       "https://vpiraquara.com.br",
-      "https://www.vpiraquara.com.br",
+      "https://lms-treinamento-deploy.onrender.com",
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
