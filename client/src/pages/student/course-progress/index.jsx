@@ -203,10 +203,10 @@ function StudentViewCourseProgressPage() {
           <Button
             onClick={() => navigate("/student-courses")}
             className="text-black"
-            variant="ghost"
+            variant="secondary"
             size="sm"
           >
-            <ChevronLeft className="h-4 w-4 mr-2" />
+            <ChevronLeft className="h-4 w-4 mr-2 " />
             Voltar aos meus cursos
           </Button>
           <h1 className="text-lg font-bold hidden md:block">

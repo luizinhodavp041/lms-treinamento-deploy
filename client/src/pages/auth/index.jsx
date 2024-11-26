@@ -137,9 +137,9 @@ function AuthPage() {
           onValueChange={handleTabChange}
           className="w-full max-w-md"
         >
-          <TabsList className="grid w-full grid-cols-2">
+          <TabsList className="grid w-full grid-cols-1">
             <TabsTrigger value="signin">Entrar</TabsTrigger>
-            <TabsTrigger value="signup">Cadastrar</TabsTrigger>
+            {/* <TabsTrigger value="signup">Cadastrar</TabsTrigger> */}
           </TabsList>
           <TabsContent value="signin">
             <Card className="p-6 space-y-4">
@@ -161,7 +161,7 @@ function AuthPage() {
               </CardContent>
             </Card>
           </TabsContent>
-          <TabsContent value="signup">
+          {/* <TabsContent value="signup">
             <Card className="p-6 space-y-4">
               <CardHeader>
                 <CardTitle>Criar uma nova conta</CardTitle>
@@ -180,7 +180,7 @@ function AuthPage() {
                 />
               </CardContent>
             </Card>
-          </TabsContent>
+          </TabsContent> */}
         </Tabs>
       </div>
     </div>

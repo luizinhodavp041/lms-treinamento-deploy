@@ -3,7 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
@@ -29,9 +28,7 @@ function InstructorCourses({ listOfCourses }) {
   return (
     <Card>
       <CardHeader className="flex justify-between flex-row items-center">
-        <CardTitle className="text-3xl font-extrabold">
-          Todos os cursos
-        </CardTitle>
+        <CardTitle className="text-3xl font-extrabold">All Courses</CardTitle>
         <Button
           onClick={() => {
             setCurrentEditedCourseId(null);
@@ -41,19 +38,18 @@ function InstructorCourses({ listOfCourses }) {
           }}
           className="p-6"
         >
-          Novo curso
+          Create New Course
         </Button>
       </CardHeader>
       <CardContent>
         <div className="overflow-x-auto">
           <Table>
-            <TableCaption>Lista de movimentações recentes</TableCaption>
             <TableHeader>
               <TableRow>
-                <TableHead>Curso</TableHead>
-                <TableHead>Alunos</TableHead>
-                <TableHead>Faturamento</TableHead>
-                <TableHead className="text-right">Ações</TableHead>
+                <TableHead>Course</TableHead>
+                <TableHead>Students</TableHead>
+                <TableHead>Revenue</TableHead>
+                <TableHead className="text-right">Actions</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -75,10 +71,10 @@ function InstructorCourses({ listOfCourses }) {
                           variant="ghost"
                           size="sm"
                         >
-                          <Edit className="h-6 w-6 text-[#043C6C]" />
+                          <Edit className="h-6 w-6" />
                         </Button>
                         <Button variant="ghost" size="sm">
-                          <Delete className="h-6 w-6 text-[#6c0404]" />
+                          <Delete className="h-6 w-6" />
                         </Button>
                       </TableCell>
                     </TableRow>
