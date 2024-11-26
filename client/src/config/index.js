@@ -70,10 +70,10 @@ export const courseLevelOptions = [
 ];
 
 export const courseCategories = [
-  { id: "direcao-defensiva", label: "Direção defensiva" },
+  { id: "veiculos-novos", label: "Veículos novos" },
   {
     id: "outros",
-    label: "Outras categorias serão criadas junto ao Setor de Treinamento",
+    label: "Outros",
   },
 ];
 
