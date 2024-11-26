@@ -18,12 +18,14 @@ app.use(
   cors({
     origin: [
       process.env.CLIENT_URL,
-      // "http://localhost:5173", // para desenvolvimento
       "https://vpiraquara.com.br",
-      "https://lms-treinamento-deploy.onrender.com",
+      "https://lms-treinamento-deploy-1.onrender.com", // Frontend do Render
+      "https://lms-treinamento-deploy.onrender.com", // Backend do Render
+      "http://localhost:5173", // Para desenvolvimento local
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true, // Importante para compartilhar cookies/tokens
   })
 );
 
